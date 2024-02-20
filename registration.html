@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body,button{
+            background-image: -webkit-linear-gradient(180deg,rgb(174, 101, 196),rgb(210, 186, 136));
+        }
+        .container{
+            height: 500px;
+            width: 700px;
+            background-color: white;
+            margin-left: 30%;
+            margin-top: 80px;
+            border:transparent;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .block1{
+            position: relative;
+            height: 260px;
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+        .block2{
+            float: left;
+            left: 850px;
+            top: 200px;
+            position: absolute;
+            height: 250px;
+        }
+        .gender{
+        margin-left: 30px;
+        }
+        .reg{
+            width: 300px;
+            margin-left: 210px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div class="container">
+        <div><h1>Registration Form</h1></div>
+        <div class="block1">
+                <label for=""><b>Full Name</b></label><br>
+                <input style="height: 30px; width: 250px;" type="text" name="name" placeholder="Enter Name" required><br><br><br>
+                <label for=""><b>Username </b></label><br>
+                <input style="height: 30px; width: 250px;" type="text" name="name" placeholder="Enter Username" required><br><br><br>
+                <label for=""><b>Phone no</b></label><br>
+                <input style="height: 30px; width: 250px;" type="number" name="number" placeholder="Mobile number" required>
+        </div>
+        <div class="block2">
+            <label for=""><b>Email</b></label><br>
+            <input style="height: 30px; width: 250px;" type="email" name="email" id="" placeholder="Enter Email" required><br><br><br>
+            <label for=""><b>password</b></label><br>
+            <input style="height: 30px; width: 250px;" type="password" name="password" id="" placeholder=" Enter Password" required><br><br><br>
+            <label for=""><b>Confirm password </b></label><br>
+            <input style="height: 30px; width: 250px;" type="password" name="password" id="" placeholder=" Confirm Password" required><br><br>
+        </div>
+        <label class="gender" for=""><b>Gender</b></label>
+        <input type="radio" name="gender" id="" required>
+        <label for="">Male</label>
+        <input  type="radio" name="gender" id="" required>
+        <label for="">Female</label><br><br><br>
+        <button style="height: 30px; width: 250px;" class="reg"><b>Register</b></button>
+    </div>
+</form>
+</body>
+</html>
